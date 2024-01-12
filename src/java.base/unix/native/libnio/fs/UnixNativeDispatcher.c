@@ -155,7 +155,7 @@ static futimens_func* my_futimens_func = NULL;
 static lutimes_func* my_lutimes_func = NULL;
 static fdopendir_func* my_fdopendir_func = NULL;
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) && !defined(__TERMUX__)
 /*
  * TODO: Android lacks support for the methods listed below.  In it's place are
  * alternatives that use existing Android functionality, but lack reentrant

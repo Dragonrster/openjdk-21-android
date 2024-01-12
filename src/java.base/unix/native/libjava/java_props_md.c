@@ -46,7 +46,7 @@
 #include "java_props_macosx.h"
 #endif
 
-#ifdef __ANDROID__
+#if defined(__ANDROID__) && !defined(__TERMUX__)
 // From https://android.googlesource.com/platform/bionic/+/master/libc/bionic/langinfo.cpp
 /*
  * Copyright (C) 2016 The Android Open Source Project
