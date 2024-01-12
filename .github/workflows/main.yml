@@ -33,7 +33,7 @@ on:
   workflow_dispatch:
     inputs:
       platforms:
-        description: 'Platform(s) to execute on (comma separated, e.g. "linux-x64, macos, aarch64")'
+        description: 'Platform(s) to execute on (comma separated, e.g. "linux-aarch64, docs")'
         required: true
         default: 'linux-aarch64, docs'
       configure-arguments:
